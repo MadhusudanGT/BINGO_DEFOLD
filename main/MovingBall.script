@@ -6,16 +6,25 @@ function init(self)
 		number = math.random(2,25)
 		return number
 	end
-	label.set_text("#blabel",randomNumber())
+	
+	
+end
+local clock = os.clock
 
+function sleep(n)  -- seconds
+	local t0 = clock()
+	while clock() - t0 <= n do end
+	local number=math.random() and math.random() and math.random() and math.random(0, 10)
+	label.set_text("#blabel",number)
 end
 
 function update(self,dt)
+	sleep(3)
 	function randomNumber()
 		number = math.random(2,25)
 		return number
 	end
-	label.set_text("#blabel",randomNumber())
+
 end
 
 function final(self)
