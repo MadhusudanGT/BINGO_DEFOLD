@@ -220,6 +220,7 @@ function on_input(self, action_id, action)
 				gui.set_text(text8, text20)
 			else	
 				gui.set_text(text8, "*")
+				gui.set_texture(star1252, "star1252")
 			end
 		end
 		--10nd node

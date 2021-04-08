@@ -3,6 +3,10 @@ fonts {
   name: "Myfonts"
   font: "/fonts/Myfonts.font"
 }
+textures {
+  name: "Atlas"
+  texture: "/main/Atlas.atlas"
+}
 background_color {
   x: 0.0
   y: 0.0
